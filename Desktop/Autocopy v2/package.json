@@ -1,0 +1,26 @@
+{
+  "name": "sdcard-autocopy",
+  "version": "1.0.0",
+  "description": "Automatically detects SD cards on Windows and copies files.",
+  "main": "autocopy.js",
+  "scripts": {
+    "start": "node autocopy.js",
+    "build": "pkg autocopy.js --targets node18-win-x64 --output sdcard-autocopy.exe"
+  },
+  "keywords": [
+    "sd card",
+    "autocopy",
+    "windows",
+    "pkg"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "node-notifier": "^10.0.1",
+    "systeminformation": "^5.27.11"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
